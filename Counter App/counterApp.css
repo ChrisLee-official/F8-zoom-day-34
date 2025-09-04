@@ -9,12 +9,55 @@ body {
 }
 .counter-app {
   background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
   min-width: 350px;
-  height: 400px;
+  padding: 40px;
 }
 
 .counter-app h1 {
+  margin: 20px 0px;
+  font-size: 1.6rem;
   text-align: center;
+}
+
+.count {
+  margin: 20px 0px;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+}
+
+.btn-wrapper button {
+  padding: 10px;
+  border: 10px none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.decrement {
+  background-color: #e63434;
+}
+
+.decrement:hover {
+  background-color: #cc3535;
+}
+.reset {
+  background-color: #e6a120;
+}
+.reset:hover {
+  background-color: #d99d2d;
+}
+.increment {
+  background: #4fc66b;
+}
+
+.increment:hover {
+  background: #4db966;
 }

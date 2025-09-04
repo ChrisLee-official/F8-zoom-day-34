@@ -1,18 +1,31 @@
 const $ = document.querySelector.bind(document);
-const { useState, useEffect } = React;
+const { useState } = React;
 
 function CounterApp() {
-  const [count, setCount] = useState(count);
-
+  const [count, setCount] = useState(0);
+  const handleIncrease = () => {
+    setCount(count + 1);
+  };
+  const handleDecrease = () => {
+    setCount(count - 1);
+  };
+  const handleReset = () => setCount(0);
   return (
     <>
       <div className="counter-app">
         <h1>Counter App</h1>
-        <div className="show-count">{count}</div>
+        <div className="count">{count}</div>
+        <div className="status"></div>
         <div className="btn-wrapper">
-          <button className="decrement">Decrement (-1)</button>
-          <button className="reset">Reset (0)</button>
-          <button className="increment">Increment (+1)</button>
+          <button onClick={handleDecrease} className="decrement">
+            Decrease (-1)
+          </button>
+          <button onClick={handleReset} className="reset">
+            Reset
+          </button>
+          <button onClick={handleIncrease} className="increment">
+            Increase (+1)
+          </button>
         </div>
       </div>
     </>
