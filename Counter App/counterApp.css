@@ -11,7 +11,7 @@ body {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
-  min-width: 350px;
+  min-width: 400px;
   padding: 40px;
 }
 
@@ -24,7 +24,31 @@ body {
 .count {
   margin: 20px 0px;
   font-size: 5rem;
+  font-weight: bold;
   text-align: center;
+  color: #d99d2d;
+}
+
+.count.positive {
+  color: #4db966;
+}
+.count.negative {
+  color: #e63434;
+}
+
+.status {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #d99d2d;
+}
+
+.status.positive {
+  color: #4db966;
+}
+.status.negative {
+  color: #cc3535;
 }
 
 .btn-wrapper {

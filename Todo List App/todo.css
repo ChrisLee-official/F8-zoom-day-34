@@ -1,0 +1,39 @@
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.todo {
+  min-width: 500px;
+  height: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+.todo h1 {
+  margin: 10px 0;
+  font-size: 1.6rem;
+}
+
+.todo-form {
+  display: flex;
+  gap: 10px;
+}
+.todo-form .todo-input {
+  padding: 5px 10px;
+  border-color: none;
+  border-radius: 5px;
+  flex-grow: 1;
+}
+
+.todo-form .btn-add {
+  padding: 5px 20px;
+}

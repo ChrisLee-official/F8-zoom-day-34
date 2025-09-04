@@ -14,16 +14,28 @@ function CounterApp() {
     <>
       <div className="counter-app">
         <h1>Counter App</h1>
-        <div className="count">{count}</div>
-        <div className="status"></div>
+        <div
+          className={`count ${
+            count < 0 ? "negative" : count > 0 ? "positive" : "default"
+          }`}
+        >
+          {count}
+        </div>
+        <div
+          className={`status ${
+            count < 0 ? "negative" : count > 0 ? "positive" : "zero"
+          }`}
+        >
+          {count < 0 ? "Negative" : count > 0 ? "Positive" : "Zero"}
+        </div>
         <div className="btn-wrapper">
-          <button onClick={handleDecrease} className="decrement">
+          <button className="decrement" onClick={handleDecrease}>
             Decrease (-1)
           </button>
-          <button onClick={handleReset} className="reset">
+          <button className="reset" onClick={handleReset}>
             Reset
           </button>
-          <button onClick={handleIncrease} className="increment">
+          <button className="increment" onClick={handleIncrease}>
             Increase (+1)
           </button>
         </div>
