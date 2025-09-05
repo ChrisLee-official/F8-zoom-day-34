@@ -10,8 +10,8 @@ body {
 }
 
 .todo {
-  min-width: 500px;
-  height: 600px;
+  width: 50vw;
+  min-height: 600px;
   padding: 20px;
   border-radius: 10px;
   background-color: #fff;
@@ -28,12 +28,19 @@ body {
   gap: 10px;
 }
 .todo-form .todo-input {
-  padding: 5px 10px;
-  border-color: none;
-  border-radius: 5px;
   flex-grow: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
 }
 
 .todo-form .btn-add {
   padding: 5px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(14, 98, 217);
 }
