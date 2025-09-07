@@ -10,8 +10,7 @@ body {
 }
 
 .todo {
-  width: 50vw;
-  min-height: 600px;
+  width: clamp(576px, 50vw, 700px);
   padding: 20px;
   border-radius: 10px;
   background-color: #fff;
@@ -43,4 +42,18 @@ body {
   font-weight: bold;
   color: white;
   background-color: rgb(14, 98, 217);
+}
+
+.empty-task {
+  margin: 15px 0px;
+  padding: 20px;
+  border: 1px dashed #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
 }
